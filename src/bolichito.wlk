@@ -1,8 +1,8 @@
 import objetos.*
 
 object bolichito {
-	var objetoEnMostrador
-	var objetoEnVidriera
+	var objetoEnMostrador 
+	var objetoEnVidriera 
 	
 	method ponerEnMostrador(objeto) { objetoEnMostrador = objeto }
 	method ponerEnVidriera(objeto) { objetoEnVidriera = objeto }
@@ -18,14 +18,15 @@ object bolichito {
 	}
 	
 	method estaDesequilibrado() {
-		// completar
+		return objetoEnMostrador.peso() > objetoEnVidriera.peso()
 	}
 	
 	method tieneAlgoDeColor(color) {
-		// completar
+		return objetoEnMostrador.color(color) or objetoEnVidriera.color(c olor)
 	}
 
 	method puedeOfrecerleAlgoA(persona) {
 		// completar
 	}
+	
 }

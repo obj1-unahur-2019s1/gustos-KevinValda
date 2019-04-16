@@ -5,7 +5,17 @@ object estefania {
 }
 
 object rosa {
-	method leGusta(objeto) {  }  // completar
+	method leGusta(objeto) = objeto.peso()<= 2100
 }
 
-// agregar luisa y juan
+object luisa {
+	
+	method leGusta(objeto) =  objeto.mareital().brilla()
+	
+}
+
+object juan {
+	
+	method leGusta(objeto) = not objeto.color().esFuerte() or objeto.peso().between(1200,1800)
+	
+}
